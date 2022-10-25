@@ -412,11 +412,12 @@
       // Write a JavaScript functionality to change the background of the jumbotron
 
       let changeBgColorJumbotron = function () {
-        let div = document.querySelector("div.jumbotron > div.col-md-6");
+        let div = document.querySelector(".jumbotron");
         div.style.backgroundColor = "lime";
       };
 
-      // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
+      // Write a JavaScript functionality to remove the “twitter” link under the
+      //   “Elsewhere” section in the aside element. It should happen when the page loads, automatically
 
       window.onload = function () {
         let aTwitter = document.querySelectorAll(
@@ -441,6 +442,21 @@
       };
 
       // Write a JavaScript functionality to add a new Blog Post (div with title and text)
+      let addNewBlogPost = function () {
+        let addToBlogMain = document.querySelector(".blog-main");
+        let newBlogDiv = document.createElement("div");
+        let blogH2 = document.createElement("h2");
+        let blogP = document.createElement("p");
+
+        blogP.innerText =
+          "This is a random text created with javascript and added to the new Blog";
+
+        blogH2.className = "blog-post-title";
+        blogH2.innerText = "New Blog Title";
+
+        addToBlogMain.appendChild(blogH2);
+        addToBlogMain.appendChild(blogP);
+      };
 
       // Write a JavaScript functionality to remove the last Blog Post when the user clicks on the "Older" button
 
