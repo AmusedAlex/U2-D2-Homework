@@ -1,0 +1,76 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Exercise 1 */
+.jumbotron > .col-md-6 h1.display-4 {
+  color: pink;
+}
+
+/* Exercise 2 */
+nav span {
+  color: lime;
+}
+
+/* Exercise 3 */
+.jumbotron p > a[href^="#"] {
+  color: lime;
+}
+
+/* Exercise 4 */
+main > div.row > div.col-md-8 > h3.pb-4 + div.blog-post {
+  color: blue;
+}
+
+/* Exercise 5 */
+main > div.row > div.col-md-8 > h3.pb-4 + div.blog-post > hr {
+  background-color: red;
+}
+
+/* Exercise 6 */
+
+nav span:nth-child(even) {
+  color: blue;
+}
+
+/* Exercise 7 */
+div.p-4 > h4 + ol.list-unstyled.mb-0 li {
+  color: green;
+}
+
+/* Exercise 8 */
+div.blog-post > h2.blog-post-title + p.blog-post-meta > a[href="#"] {
+  color: lime;
+}
+
+/* Exercise 9 */
+div.blog-post ul li:nth-child(2) {
+  color: lime;
+}
+
+/* Exercise 10 */
+footer + a[href="#"].float-right.mb-3.mr-3 {
+  color: lime;
+}
+
+/* Exercise 11 */
+a[tabindex="-1"] {
+  border: 1px solid red;
+}
+
+/* Exercise 12 */
+footer a[href="https://twitter.com/mdo"]
+{
+  color: lime;
+}
